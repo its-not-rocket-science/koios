@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://sweetontology.net/phen"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://sweetontology.net/phen">
+    <Prefix name="" IRI="http://sweetontology.net/phen#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="soph" IRI="http://sweetontology.net/phen/"/>
+    <Prefix name="sost" IRI="http://sweetontology.net/state/"/>
+    <Prefix name="sorea" IRI="http://sweetontology.net/realm/"/>
+    <Prefix name="sorel" IRI="http://sweetontology.net/rela/"/>
+    <Prefix name="sophsy" IRI="http://sweetontology.net/phenSystem/"/>
+    <Prefix name="sorelt" IRI="http://sweetontology.net/relaTime/"/>
+    <Prefix name="sostss" IRI="http://sweetontology.net/stateSpaceScale/"/>
+    <Prefix name="sostsy" IRI="http://sweetontology.net/stateSystem/"/>
+    <Prefix name="sosttf" IRI="http://sweetontology.net/stateTimeFrequency/"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="soprocp" IRI="http://sweetontology.net/procPhysical/"/>
+    <Prefix name="sorelsc" IRI="http://sweetontology.net/relaSci/"/>
+    <Prefix name="sorelsp" IRI="http://sweetontology.net/relaSpace/"/>
+    <Prefix name="sopropef" IRI="http://sweetontology.net/propEnergyFlux/"/>
+    <Import>http://sweetontology.net/phenSystem</Import>
+    <Import>http://sweetontology.net/procPhysical</Import>
+    <Import>http://sweetontology.net/propEnergyFlux</Import>
+    <Import>http://sweetontology.net/realm</Import>
+    <Import>http://sweetontology.net/rela</Import>
+    <Import>http://sweetontology.net/relaSci</Import>
+    <Import>http://sweetontology.net/relaSpace</Import>
+    <Import>http://sweetontology.net/relaTime</Import>
+    <Import>http://sweetontology.net/state</Import>
+    <Import>http://sweetontology.net/stateSpaceScale</Import>
+    <Import>http://sweetontology.net/stateSystem</Import>
+    <Import>http://sweetontology.net/stateTimeFrequency</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <IRI>https://creativecommons.org/publicdomain/zero/1.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>SWEET Ontology Phenomena</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>3.6.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="/AirSeaExchange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AtmosphereLandExchange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AtmosphereOceanExchange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/BrownianMotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DynamicalPhenomena"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ExtremeEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Flash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Occurrence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Phenomena"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PlanetaryPhenomena"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Precipitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RadiationalCooling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RadiationalHeating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RadiativeCooling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RadiativeHeating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/StochasticProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Teleconnection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="System/Exchange"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="soprocp:Cooling"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="soprocp:Heating"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sopropef:RadiativeForcing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sorea:Atmosphere"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sorea:Land"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sorea:Ocean"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sorel:hasState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sorelsc:hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sorelsp:hasSpatialScale"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sorelt:hasFrequency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sostss:PlanetaryScale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sostsy:Stochastic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sosttf:Infrequent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sweetontology.net/matrFacility/Structure"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://schema.org/name"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/Organization"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://schema.org/identifier"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="/AirSeaExchange"/>
+        <Class IRI="/AtmosphereOceanExchange"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Event"/>
+        <Class IRI="/Occurrence"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/RadiationalCooling"/>
+        <Class IRI="/RadiativeCooling"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/RadiationalHeating"/>
+        <Class IRI="/RadiativeHeating"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="/AirSeaExchange"/>
+        <Class IRI="/Phenomena"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AirSeaExchange"/>
+        <Class IRI="System/Exchange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AirSeaExchange"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="sorelsc:hasSource"/>
+            <Class abbreviatedIRI="sorea:Atmosphere"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AirSeaExchange"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="sorelsc:hasSource"/>
+            <Class abbreviatedIRI="sorea:Ocean"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AtmosphereLandExchange"/>
+        <Class IRI="/Phenomena"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AtmosphereLandExchange"/>
+        <Class IRI="System/Exchange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AtmosphereLandExchange"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="sorelsc:hasSource"/>
+            <Class abbreviatedIRI="sorea:Atmosphere"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AtmosphereLandExchange"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="sorelsc:hasSource"/>
+            <Class abbreviatedIRI="sorea:Land"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/BrownianMotion"/>
+        <Class IRI="/StochasticProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DynamicalPhenomena"/>
+        <Class IRI="/Phenomena"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Event"/>
+        <Class IRI="/Phenomena"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExtremeEvent"/>
+        <Class IRI="/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExtremeEvent"/>
+        <ObjectHasValue>
+            <ObjectProperty abbreviatedIRI="sorelt:hasFrequency"/>
+            <NamedIndividual abbreviatedIRI="sosttf:Infrequent"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Flash"/>
+        <Class IRI="/Phenomena"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PlanetaryPhenomena"/>
+        <Class IRI="/Phenomena"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PlanetaryPhenomena"/>
+        <ObjectHasValue>
+            <ObjectProperty abbreviatedIRI="sorelsp:hasSpatialScale"/>
+            <NamedIndividual abbreviatedIRI="sostss:PlanetaryScale"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Precipitation"/>
+        <Class IRI="/Phenomena"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RadiativeCooling"/>
+        <Class abbreviatedIRI="soprocp:Cooling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RadiativeCooling"/>
+        <Class abbreviatedIRI="sopropef:RadiativeForcing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RadiativeHeating"/>
+        <Class abbreviatedIRI="soprocp:Heating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RadiativeHeating"/>
+        <Class abbreviatedIRI="sopropef:RadiativeForcing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/StochasticProcess"/>
+        <Class IRI="/DynamicalPhenomena"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/StochasticProcess"/>
+        <ObjectHasValue>
+            <ObjectProperty abbreviatedIRI="sorel:hasState"/>
+            <NamedIndividual abbreviatedIRI="sostsy:Stochastic"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Teleconnection"/>
+        <Class IRI="/PlanetaryPhenomena"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/RadiativeCooling"/>
+        <Class IRI="/RadiativeHeating"/>
+    </DisjointClasses>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/AirSeaExchange</IRI>
+        <Literal xml:lang="en">air sea exchange</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/AtmosphereLandExchange</IRI>
+        <Literal xml:lang="en">atmosphere land exchange</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/AtmosphereOceanExchange</IRI>
+        <Literal xml:lang="en">atmosphere ocean exchange</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/BrownianMotion</IRI>
+        <Literal xml:lang="en">brownian motion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/DynamicalPhenomena</IRI>
+        <Literal xml:lang="en">dynamical phenomena</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Event</IRI>
+        <Literal xml:lang="en">event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ExtremeEvent</IRI>
+        <Literal xml:lang="en">extreme event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Flash</IRI>
+        <Literal xml:lang="en">flash</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Occurrence</IRI>
+        <Literal xml:lang="en">occurrence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Phenomena</IRI>
+        <Literal xml:lang="en">phenomena</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PlanetaryPhenomena</IRI>
+        <Literal xml:lang="en">planetary phenomena</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Precipitation</IRI>
+        <Literal xml:lang="en">precipitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RadiationalCooling</IRI>
+        <Literal xml:lang="en">radiational cooling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RadiationalHeating</IRI>
+        <Literal xml:lang="en">radiational heating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RadiativeCooling</IRI>
+        <Literal xml:lang="en">radiative cooling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RadiativeHeating</IRI>
+        <Literal xml:lang="en">radiative heating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/StochasticProcess</IRI>
+        <Literal xml:lang="en">stochastic process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Teleconnection</IRI>
+        <Literal xml:lang="en">teleconnection</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

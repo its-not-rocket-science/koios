@@ -1,0 +1,12 @@
+<!-- data/ontology/test_mini.owl -->
+<rdf:RDF xmlns="http://example.org/onto#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <owl:Class rdf:about="http://example.org/onto#Hurricane"/>
+  <owl:Class rdf:about="http://example.org/onto#Storm">
+    <rdfs:subClassOf rdf:resource="http://example.org/onto#Hurricane"/>
+  </owl:Class>
+
+</rdf:RDF>

@@ -1,14 +1,66 @@
+# Byte-compiled / cache
 __pycache__/
 *.py[cod]
-*.ipynb_checkpoints
+*.so
+*.pyd
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
 .env
+.venv/
 venv/
-logs/
-data/
-checkpoints/
-*.pt
-*.pth
-*.ckpt
+env/
+*.env
+
+# Logs and output
 *.log
-wandb/
+*.out
+*.bak
+*.tmp
+logs/
+checkpoints/
+
+# Python packages
+*.egg-info/
+dist/
+build/
+
+# LaTeX artefacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.xdy
+
+# DS_Store (Mac) / Thumbs.db (Windows)
 .DS_Store
+Thumbs.db
+
+# test output
+tests/test_export.json
+
+# Coverage output
+htmlcov/
+.coverage
+
+# don't check in the paper for now
+arxiv-paper/

@@ -1,0 +1,6 @@
+{
+  "classes": ["Storm", "Hurricane"],
+  "labels": {"Storm": "Storm", "Hurricane": "Hurricane"},
+  "hierarchy": {"Storm": ["Hurricane"]},
+  "relations": []
+}

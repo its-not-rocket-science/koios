@@ -1,0 +1,15 @@
+torch
+transformers
+owlready2
+scikit-learn
+numpy
+pandas
+pykeen
+rdflib
+matplotlib
+networkx
+node2vec
+sentence-transformers
+seaborn
+pytest
+tox
