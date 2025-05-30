@@ -3,7 +3,7 @@ name = "koios"
 version = "0.1.0"
 description = "Ontology-Grounded Transformer for Interpretable NLP"
 authors = [
-    { name = "Your Name", email = "your@email.com" }
+    { name = "Paul Schleifer", email = "paul_schleifer@hotmail.com" }
 ]
 dependencies = [
     "torch",
@@ -23,5 +23,8 @@ dev = [
 ]
 
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["koios"]
