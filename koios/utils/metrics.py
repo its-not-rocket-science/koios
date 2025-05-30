@@ -5,14 +5,13 @@ Evaluation metrics for classification, QA, and attribution.
 import os
 import json
 import torch
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, accuracy_score, f1_score
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 
 def classification_metrics(model, dataloader):
     """Compute accuracy, precision, recall, and F1-score."""
-    from sklearn.metrics import accuracy_score, f1_score
 
     y_true = []
     y_pred = []

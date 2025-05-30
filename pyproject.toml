@@ -19,7 +19,8 @@ dev = [
     "pytest",
     "coverage",
     "codecov",
-    "pylint"
+    "pylint",
+    "seaborn"
 ]
 
 [build-system]
